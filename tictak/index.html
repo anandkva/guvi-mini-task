@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <p>Go to <a href="../../index.html" style="color:white; text-decoration: none;">home</a></p>
+        <h1 id="title">Tic-Tac-Toe Game</h1>
+        <div id="nfo">
+            <div id="whos-turn" class="x">
+                <p>Who's Turn</p>
+                <span class="x">Player 1</span>
+                <span class="o">Player 2</span>
+            </div>
+            <div id="score">
+                <p><span style="color: #ed4e6e;">Player 1:</span>
+                    <span id="player-one-score" style="padding-right: 190px; color: #ed4e6e;">0</span>
+                    <span style=" color: #341f57fb;">Player2:</span>
+                    <span id="player-two-score" style="color:#341f57fb;">0</span>
+                </p>
+            </div>
+        </div>
+        <div id="game-messages">
+            <span class="player-x-win">Player 1 Win the Game!</span>
+            <span class="player-o-win">Player 2 Win the Game! </span>
+            <span class="draw">Draw Game</span>
+            <button id="reset-game">Reset Game</button>
+        </div><br>
+        <div>
+            <ul id="game">
+                <li data-pos="0,0"></li>
+                <li data-pos="0,1"></li>
+                <li data-pos="0,2"></li>
+                <li data-pos="1,0"></li>
+                <li data-pos="1,1"></li>
+                <li data-pos="1,2"></li>
+                <li data-pos="2,0"></li>
+                <li data-pos="2,1"></li>
+                <li data-pos="2,2"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
