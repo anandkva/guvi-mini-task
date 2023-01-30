@@ -24,12 +24,12 @@ const del = () => {
     document.getElementById("result").value = screen.value.slice(0, -1)
 };
 const validate = (evt) => {
-    let theEvent = evt || window.event;
+    var theEvent = evt || window.event;
     if (theEvent) {
-        let key = theEvent.keyCode || theEvent.which;
+        var key = theEvent.keyCode || theEvent.which;
         key = String.fromCharCode(key);
     }
-    let regex = /[0-9 \+ \- /* ]|\./;
+    var regex = /[0-9 \+ \- /* ]|\./;
     if (!regex.test(key) && theEvent.keyCode !== 13) {
         alret()
         theEvent.returnValue = false;       
