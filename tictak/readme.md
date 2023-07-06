@@ -26,10 +26,6 @@ This is a simple Tic-tac-toe game built using HTML, CSS, and JavaScript. The gam
 
 ![Game Screenshot](../snap/tic-tak.PNG)
 
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please create an issue or submit a pull request.
-
 ## License
 
 This project is licensed under the [Guvi](https://guvi.io)
